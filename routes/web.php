@@ -12,8 +12,6 @@
 */
 
 Route::get('/', function () {
-    
-    //$tasks = DB::table('tasks')->get();
 
     return view('welcome');
 
@@ -24,8 +22,6 @@ Route::get('/about', 'PagesController@index');
 
 
 Route::get('/tasks', function() {
-
-	//$tasks = DB::table('tasks')->latest()->get();
 
 	return view('tasks.index', compact('tasks'));
 
