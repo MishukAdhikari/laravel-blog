@@ -21,20 +21,7 @@ Route::get('/', function () {
 
 });
 
-
-Route::get('/tasks', function(){
-
-	$tasks = Task::all();
-
-	return view('tasks.index', compact('tasks'));
-
-});
+Route::get('/tasks', 'TasksController@index');
 
 
-Route::get('/tasks/{id}', function($id){
-
-	$tasks = Task::all()->find($id);
-
-	return view('tasks.show', compact('tasks'));
-
-});
+Route::get('/tasks/{id}', 'TasksController@show');
