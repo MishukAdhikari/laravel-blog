@@ -13,15 +13,8 @@
 
 use App\Task;
 
-Route::get('/', function () {
-
-	$tasks = DB::table('tasks')->get();
-
-    return view('welcome', compact('tasks'));
-
-});
+Route::get('/', 'HomeController@index');
 
 Route::get('/tasks', 'TasksController@index');
-
 
 Route::get('/tasks/{id}', 'TasksController@show');
