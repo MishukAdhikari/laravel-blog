@@ -18,7 +18,11 @@ return [
     'after'                => 'The :attribute must be a date after :date.',
     'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => 'The :attribute may only contain letters.',
+<<<<<<< HEAD
     'alpha_dash'           => 'The :attribute may only contain letters, numbers, dashes and underscores.',
+=======
+    'alpha_dash'           => 'The :attribute may only contain letters, numbers, and dashes.',
+>>>>>>> 9b8ca521c2671dfd74452a2dea105d099a30c5fb
     'alpha_num'            => 'The :attribute may only contain letters and numbers.',
     'array'                => 'The :attribute must be an array.',
     'before'               => 'The :attribute must be a date before :date.',
@@ -42,6 +46,7 @@ return [
     'exists'               => 'The selected :attribute is invalid.',
     'file'                 => 'The :attribute must be a file.',
     'filled'               => 'The :attribute field must have a value.',
+<<<<<<< HEAD
     'gt'                   => [
         'numeric' => 'The :attribute must be greater than :value.',
         'file'    => 'The :attribute must be greater than :value kilobytes.',
@@ -54,6 +59,8 @@ return [
         'string'  => 'The :attribute must be greater than or equal :value characters.',
         'array'   => 'The :attribute must have :value items or more.',
     ],
+=======
+>>>>>>> 9b8ca521c2671dfd74452a2dea105d099a30c5fb
     'image'                => 'The :attribute must be an image.',
     'in'                   => 'The selected :attribute is invalid.',
     'in_array'             => 'The :attribute field does not exist in :other.',
@@ -62,6 +69,7 @@ return [
     'ipv4'                 => 'The :attribute must be a valid IPv4 address.',
     'ipv6'                 => 'The :attribute must be a valid IPv6 address.',
     'json'                 => 'The :attribute must be a valid JSON string.',
+<<<<<<< HEAD
     'lt'                   => [
         'numeric' => 'The :attribute must be less than :value.',
         'file'    => 'The :attribute must be less than :value kilobytes.',
@@ -74,6 +82,8 @@ return [
         'string'  => 'The :attribute must be less than or equal :value characters.',
         'array'   => 'The :attribute must not have more than :value items.',
     ],
+=======
+>>>>>>> 9b8ca521c2671dfd74452a2dea105d099a30c5fb
     'max'                  => [
         'numeric' => 'The :attribute may not be greater than :max.',
         'file'    => 'The :attribute may not be greater than :max kilobytes.',
@@ -89,7 +99,10 @@ return [
         'array'   => 'The :attribute must have at least :min items.',
     ],
     'not_in'               => 'The selected :attribute is invalid.',
+<<<<<<< HEAD
     'not_regex'            => 'The :attribute format is invalid.',
+=======
+>>>>>>> 9b8ca521c2671dfd74452a2dea105d099a30c5fb
     'numeric'              => 'The :attribute must be a number.',
     'present'              => 'The :attribute field must be present.',
     'regex'                => 'The :attribute format is invalid.',

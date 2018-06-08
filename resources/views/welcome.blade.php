@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -93,3 +94,17 @@
         </div>
     </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome</title>
+</head>
+<body>
+	<h1 style="text-align: center;">
+		Welcome to blog now this is on construction mode
+	</h1>
+</body>
+</html>
+>>>>>>> 9b8ca521c2671dfd74452a2dea105d099a30c5fb

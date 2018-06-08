@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 use Monolog\Handler\StreamHandler;
 
+=======
+>>>>>>> 9b8ca521c2671dfd74452a2dea105d099a30c5fb
 return [
 
     /*
@@ -27,8 +30,12 @@ return [
     | you a variety of powerful log handlers / formatters to utilize.
     |
     | Available Drivers: "single", "daily", "slack", "syslog",
+<<<<<<< HEAD
     |                    "errorlog", "monolog",
     |                    "custom", "stack"
+=======
+    |                    "errorlog", "custom", "stack"
+>>>>>>> 9b8ca521c2671dfd74452a2dea105d099a30c5fb
     |
     */
 
@@ -59,6 +66,7 @@ return [
             'level' => 'critical',
         ],
 
+<<<<<<< HEAD
         'stderr' => [
             'driver' => 'monolog',
             'handler' => StreamHandler::class,
@@ -67,6 +75,8 @@ return [
             ],
         ],
 
+=======
+>>>>>>> 9b8ca521c2671dfd74452a2dea105d099a30c5fb
         'syslog' => [
             'driver' => 'syslog',
             'level' => 'debug',
