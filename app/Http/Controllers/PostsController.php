@@ -10,7 +10,9 @@ class PostsController extends Controller
 {
 	public function index()
 	{
-		return view( 'posts.index' );
+		$posts = Posts::all();
+
+		return view( 'posts.index', compact('posts') );
 	}
 
 	public function show()
@@ -25,18 +27,17 @@ class PostsController extends Controller
 
 	public function store()
 	{
+		$post = new Posts;
 
 		$this->validate(request(),[
 			'title'	=>	'required',
 			'body'	=>	'required'
 		]);
 
-		$post = new Posts;
-
-		$post->title = request('title');
-		$post->body = request('body');
-
-		$post->save();
+		Posts::create([
+			'title' =>	request('title'),
+			'body'	=>	request('body')
+		]);
 
 		return redirect('/');
 
